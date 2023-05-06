@@ -1,0 +1,140 @@
+
+.home
+    .stepWrapp
+        div
+            display: flex
+            align-items: center
+            .stepIcon
+                width: 100px
+                height: 100px
+                color: #fff
+                margin-right: 20px
+                padding: 30px
+
+            .step
+                margin: 0
+                font-size: 35px
+                font-weight: 400
+                text-transform: uppercase
+                text-align: left
+                line-height: 70px
+                color: #fff
+
+    .cards
+        display: flex
+        flex-wrap: wrap
+        justify-content: space-between
+        padding: 30px
+        .homecards
+            min-width: 150px
+            min-height: 150px
+            padding: 30px
+            border-radius: 10px 10px 0 0
+            background: #fafafa
+            transition: scale 500ms ease
+            overflow: hidden
+            &:hover
+                scale: 1.2
+            img
+                width: 100%
+                cursor: pointer
+
+            p
+                margin: 0
+                color: #050505
+                text-align: center
+                font-size: 15px
+                font-weight: 600
+                text-transform: uppercase
+                cursor: pointer
+                transition: opacity 500ms ease
+                &:hover
+                    opacity: 0.5
+
+    .homeTitle
+        text-align: center
+        h1
+            color: #fff
+        h2, p
+            margin: 0 auto
+            margin-top: 20px
+            width: 80%
+            font-size: 30px
+            font-weight: 500
+            color: #fff
+        p
+            margin-top: 20px
+            text-transform: uppercase
+            font-size: 25px
+            font-weight: 400
+
+@media (max-width: 821px)
+    .home
+        // margin-top: 120px
+        margin: 0
+
+        .stepWrapp
+            div
+                .stepIcon
+                    width: 100px
+                    height: 100px
+                .step
+                    font-size: 40px
+                    line-height: 45px
+
+        .cards
+            justify-content: center
+            .homecards
+                min-width: 400px
+                margin: 50px
+                &:hover
+                    scale: 1
+                img
+                    width: 100%
+                p
+                    font-size: 40px
+        .homeTitle
+            h1
+                font-size: 100px
+            h2, p
+                font-size: 60px
+            p
+                font-size: 55px
+@media (max-width: 400px)
+    .home
+        margin-left: 0
+        max-width: 390px
+        padding: 0
+        padding-bottom: 30px
+        .stepWrapp
+            max-width: 380px
+            div
+                .stepIcon
+                    margin: 0
+                    width: 50px
+                    height: 50px
+
+                .step
+                    font-size: 20px
+                    line-height: 25px
+        .cards
+            margin-top: 20px
+            max-width: 390px
+            padding: 0
+            .homecards
+                margin: 0
+                min-width: 200px
+                margin-bottom: 30px
+                img
+                    width: 100%
+                p
+                    font-size: 20px
+        .homeTitle
+            max-width: 380px
+            h1
+                width: 100%
+                font-size: 30px
+            h2
+                font-size: 20px
+            p
+                font-size: 20px

@@ -1,0 +1,280 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600&display=swap')
+
+body
+    margin: 0
+    background: #ffff
+    color: #222
+    font-weight: 600
+    font-family: 'Roboto', sans-serif
+
+.App
+    width: 1280px
+    margin: 50px auto
+    position: relative
+
+@media (max-width: 820px)
+    .App
+        margin: 0
+        width: 820px
+
+@media (max-width: 400px)
+    .App
+        width: 390px
+
+li
+    list-style: none
+.link
+    text-decoration: none
+    color: inherit
+
+.router-link
+    text-align: center
+    text-decoration: none
+    color: #222
+    font-weight: 500
+    span
+        color: #e42121
+        &:hover
+            opacity: 0.5
+
+.shadow
+    -webkit-box-shadow: 1px 5px 16px 6px rgba(255, 255, 255, 0.5)
+    -moz-box-shadow: 1px 5px 16px 6px rgba(255, 255, 255, 0.5)
+    box-shadow: 1px 5px 16px 6px rgba(255, 255, 255, 0.5)
+
+h1, h2, h3, p
+    margin: 0
+
+////////////////////////////////////////////////////////////////////
+
+.computer, .bg
+    margin: 0 auto
+    margin-top: 72px
+    background: url('./img/home-bg.jpg')
+    background-size: cover
+    background-position: center center
+    background-blend-mode: multiply
+    background-color: #7c7c7c
+    position: relative
+    padding: 30px
+
+.last-requests
+    margin-top: 72px
+    text-align: center
+    padding: 30px
+    input
+        width: 400px
+        padding: 12px 20px
+        margin: 8px 0
+        box-sizing: border-box
+        border: 1px solid #ccc
+        border-radius: 4px
+        font-size: 16px
+    h2
+        color: #222
+    p
+        margin-top: 20px
+    &-wrap
+        margin-top: 20px
+        display: flex
+        justify-content: space-between
+        flex-wrap: wrap
+        .lastRequestCardsWrap
+            position: relative
+
+            ul
+                border: 1px solid #918f8f
+                border-radius: 10px 10px 0 0
+                padding: 10px
+                width: 400px
+                height: 500px
+                overflow: auto
+                li
+                    display: flex
+                    justify-content: space-between
+                    border-bottom: 1px solid #00000041
+                    img
+                        width: 100px
+                        height: 100px
+                        margin-left: 5px
+                    .big
+                        transition: all 500ms ease
+                        width: 100%
+                        height: 100%
+                        position: fixed
+                        top: 0
+                        left: 0
+                        margin: 0
+                        z-index: 100
+                    .description
+                        flex-direction: column
+                    p:first-child
+                        margin-right: 20px
+                        font-weight: 600
+                        font-size: 20px
+
+                    p
+                        text-align: start
+                        margin: 0
+                        margin-bottom: 5px
+                        font-size: 15px
+                        font-weight: 400
+                        color: #222
+                    .date
+                        font-size: 15px
+                .imgLi
+                    overflow: auto
+            .estimate
+                font-size: 20px
+                padding: 15px
+                border-radius: 10px
+                background-color: #4CAF50
+                position: absolute
+                right: 5px
+                bottom: 5px
+                cursor: pointer
+                border: none
+                transition: all 0.3s ease
+                &:hover
+                    opacity: 0.5
+            .cartTrash
+                position: absolute
+                right: -6px
+                top: 12px
+
+@media (max-width: 820px)
+
+    .last-requests
+        margin-top: 50px
+        input
+            width: 750px
+            padding: 25px 25px
+            font-size: 65px
+            margin-bottom: 30px
+        h2
+            font-size: 55px
+        p
+            font-size: 45px
+
+        &-wrap
+            margin-top: 20px
+            justify-content: center
+            .lastRequestCardsWrap
+                justify-content: center
+                ul
+                    width: 700px
+                    height: 800px
+                    li
+                        img
+                            width: 200px
+                            height: 200px
+                        .date
+                            font-size: 30px
+                        p:first-child
+                            font-size: 30px
+
+                        p
+                            font-size: 30px
+
+                    button
+                        font-size: 60px
+                        padding: 20px
+                        border-radius: 20px
+                        right: 5px
+                        bottom: 5px
+@media (max-width: 400px)
+
+    .last-requests
+        margin: 0
+        input
+            width: 325px
+            padding: 15px 15px
+            font-size: 40px
+        h2
+            font-size: 35px
+        p
+            font-size: 30px
+
+        &-wrap
+            margin-top: 20px
+            justify-content: center
+            .lastRequestCardsWrap
+                justify-content: center
+                ul
+                    width: 340px
+                    height: 500px
+                    li
+                        img
+                            width: 150px
+                            height: 150px
+                        .date
+                            font-size: 15px
+                        p:first-child
+                            font-size: 15px
+
+                        p
+                            font-size: 15px
+
+                    button
+                        font-size: 20px
+                        padding: 10px
+                        border-radius: 20px
+                        right: 5px
+                        bottom: 5px
+
+footer
+    display: flex
+    justify-content: space-between
+    align-items: center
+    background-color: #fff
+    color: #000
+    padding: 1rem
+    border: 1px solid black
+    font-weight: 300
+
+    .logo
+        width: 10%
+        img
+            width: 100%
+
+    .contact-info
+        text-align: center
+        width: 30%
+        p
+            margin: 0
+
+    .feedback-link
+        text-align: center
+        width: 20%
+        a
+            color: #000
+            text-decoration: none
+
+.politica
+
+    background: #fff
+    width: 940px
+    margin: 1em auto
+    border: 1px solid #ccc
+    padding: 1em
+    margin-top: 100px
+
+    h1
+        color: #006dad
+        font-size: 2.2em
+        text-align: center
+
+    h2
+        color: #444
+        font-size: 1.8em
+        text-align: center
+
+    h3
+        color: #222
+        font-size: 1.6em
+        text-align: center
+
+    p
+        color: #333
+        padding: 0 0 0.5em
+        font: 1em Arial
