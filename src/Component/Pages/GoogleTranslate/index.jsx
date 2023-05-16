@@ -12,7 +12,7 @@ const GoogleTranslate = () => {
 		window.googleTranslateElementInit = function () {
 			new window.google.translate.TranslateElement(
 				{
-					pageLanguage: 'ru',
+					pageLanguage: 'tr',
 					includedLanguages: 'en,tr,ru',
 					layout: window.google.translate.TranslateElement.InlineLayout.SIMPLE,
 				},

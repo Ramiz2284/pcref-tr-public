@@ -42,7 +42,7 @@ function Header() {
 			<div className={styles.header}>
 				<div className={styles.logo}>
 					<Link className={styles.link} to='/'>
-						<li>Скупка компьютеров</li>
+						<li>Bilgisayar alımı</li>
 					</Link>
 				</div>
 
@@ -62,28 +62,28 @@ function Header() {
 							onClick={() => setIsOpen(false)}
 							to='/computer'
 						>
-							<li>Компьютер</li>
+							<li>Bilgisayar</li>
 						</Link>
 						<Link
 							className={styles.link}
 							onClick={() => setIsOpen(false)}
 							to='/accessories'
 						>
-							<li>Комплектующие</li>
+							<li>Bileşenler</li>
 						</Link>
 						<Link
 							className={styles.link}
 							onClick={() => setIsOpen(false)}
 							to='/monitors'
 						>
-							<li>Мониторы</li>
+							<li>Monitörler</li>
 						</Link>
 						<Link
 							className={styles.link}
 							onClick={() => setIsOpen(false)}
 							to='/laptops'
 						>
-							<li>Ноутбуки</li>
+							<li>Dizüstü bilgisayarlar</li>
 						</Link>
 					</ul>
 				</nav>
@@ -91,19 +91,19 @@ function Header() {
 				{!isAuth ? (
 					<div className={styles.registerWrap}>
 						<Link className={styles.link} to='/login'>
-							<div className={styles.login}>Войти</div>
+							<div className={styles.login}>Giriş Yap</div>
 						</Link>
 						<Link className={styles.link} to='/registrations'>
-							<div className={styles.register}>Регистрация</div>
+							<div className={styles.register}>Kayıt Ol</div>
 						</Link>
 					</div>
 				) : (
 					<div className={styles.logout}>
 						<div onClick={logoutFN} className={styles.login}>
-							Выйти
+							Çıkış Yap
 						</div>
 						<div className={styles.isLogin}>
-							Вы вошли как: <br />{' '}
+							Giriş yaptınız: <br />{' '}
 							<span style={{ color: '#1770af' }}>{name}</span>
 						</div>
 					</div>

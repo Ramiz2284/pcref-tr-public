@@ -1,28 +1,34 @@
-
-import styles from "../Form.module.sass";
 import React from 'react'
-import { Link } from 'react-router-dom';
-import MonitorForm from './MonitorForm';
+import { Link } from 'react-router-dom'
+import styles from '../Form.module.sass'
+import MonitorForm from './MonitorForm'
 
 function Monitor() {
-    return (
-        <div className={`${styles.computer} ${"bg"}`} >
-            <h1>Продать монитор</h1>
-            <p>
-                Чтобы продать ваш монитор, пожалуйста, укажите модель и марку, дополнительные устройства, если есть.
-            </p>
-            <MonitorForm />
-            <div className={styles.important}>
-                <p><span>Пожалуйста</span></p>
-                <p>Опишите монитор максимально точно!!!</p>
-            </div>
-            <div className={styles.coputerLink}>
-                <Link className='router-link' to='/lastrequestsmonitors'><p className={styles.btn} >Смотреть запросы других людей</p></Link>
-                <p>Перейдя на страницу вы можете найти похожий монитор и узнать цену на примере других людей.</p>
-            </div>
-
-        </div>
-    )
+	return (
+		<div className={`${styles.computer} ${'bg'}`}>
+			<h1>Monitör Sat</h1>
+			<p>
+				Monitörünüzü satmak için lütfen marka ve modeli, varsa ek cihazları
+				belirtin.
+			</p>
+			<MonitorForm />
+			<div className={styles.important}>
+				<p>
+					<span>Lütfen</span>
+				</p>
+				<p>Monitörü mümkün olduğunca doğru bir şekilde tanımlayın!!!</p>
+			</div>
+			<div className={styles.coputerLink}>
+				<Link className='router-link' to='/lastrequestsmonitors'>
+					<p className={styles.btn}>Diğer insanların isteklerini gör</p>
+				</Link>
+				<p>
+					Sayfaya giderek benzer bir monitör bulabilir ve diğer insanların
+					örneklerine göre fiyatı öğrenebilirsiniz.
+				</p>
+			</div>
+		</div>
+	)
 }
 
 export default Monitor

@@ -1,28 +1,36 @@
-import styles from "../Form.module.sass";
+import styles from '../Form.module.sass'
 
 import React from 'react'
+import { Link } from 'react-router-dom'
 import ComputerForm from './ComputerForm'
-import { Link } from 'react-router-dom';
 
 function Computer() {
-    return (
-        <div className={`${styles.computer} ${"bg"}`} >
-            <h1>Продать компьютер</h1>
-            <p>
-                Чтобы продать ваш компьютер, пожалуйста, укажите модель и марку,  процессор,<br /> объем оперативной памяти и жесткого диска,<br /> графическое устройство и дополнительные устройства, если есть.
-            </p>
-            <ComputerForm />
-            <div className={styles.important}>
-                <p><span>Пожалуйста</span></p>
-                <p>Опишите компьютер максимально точно!!!</p>
-            </div>
-            <div className={styles.coputerLink}>
-                <Link className='router-link' to='/lastrequests'><p className={styles.btn} >Смотреть запросы других людей</p></Link>
-                <p>Перейдя на страницу вы можете найти похожий компьютер и узнать цену на примере других людей.</p>
-            </div>
-
-        </div>
-    )
+	return (
+		<div className={`${styles.computer} ${'bg'}`}>
+			<h1>Bilgisayar Sat</h1>
+			<p>
+				Bilgisayarınızı satmak için lütfen model ve markayı, işlemciyi,
+				<br /> RAM ve sabit disk kapasitesini,
+				<br /> grafik cihazını ve varsa ek cihazları belirtin.
+			</p>
+			<ComputerForm />
+			<div className={styles.important}>
+				<p>
+					<span>Lütfen</span>
+				</p>
+				<p>Bilgisayarı mümkün olduğunca doğru bir şekilde tanımlayın!!!</p>
+			</div>
+			<div className={styles.coputerLink}>
+				<Link className='router-link' to='/lastrequests'>
+					<p className={styles.btn}>Diğer insanların taleplerine göz atın</p>
+				</Link>
+				<p>
+					Sayfaya giderek benzer bir bilgisayar bulabilir ve diğer insanların
+					örneklerine dayalı olarak fiyatı öğrenebilirsiniz.
+				</p>
+			</div>
+		</div>
+	)
 }
 
 export default Computer
