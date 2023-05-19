@@ -2,6 +2,7 @@ import styles from '../Form.module.sass'
 
 import React from 'react'
 import { Link } from 'react-router-dom'
+import WhatsAppButton from '../WhatsApp'
 import ComputerForm from './ComputerForm'
 
 function Computer() {
@@ -13,6 +14,8 @@ function Computer() {
 				<br /> RAM ve sabit disk kapasitesini,
 				<br /> grafik cihazını ve varsa ek cihazları belirtin.
 			</p>
+			<p>Ya da bize WhatsApp numaramıza yazın</p>
+			<WhatsAppButton phoneNumber='905444558407' message='Merhaba' />
 			<ComputerForm />
 			<div className={styles.important}>
 				<p>

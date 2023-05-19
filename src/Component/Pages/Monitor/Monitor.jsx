@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import styles from '../Form.module.sass'
+import WhatsAppButton from '../WhatsApp'
 import MonitorForm from './MonitorForm'
 
 function Monitor() {
@@ -11,6 +12,8 @@ function Monitor() {
 				Monitörünüzü satmak için lütfen marka ve modeli, varsa ek cihazları
 				belirtin.
 			</p>
+			<p>Ya da bize WhatsApp numaramıza yazın</p>
+			<WhatsAppButton phoneNumber='905444558407' message='Merhaba' />
 			<MonitorForm />
 			<div className={styles.important}>
 				<p>

@@ -43,28 +43,28 @@ function AccessoriesForm() {
 		validate: values => {
 			let errors = {}
 			if (!values.video) {
-				errors.video = 'Нет видеокарты? Напишите "нет"'
+				errors.video = 'Ekran kartı yok mu? "Yok" yazınız.'
 			}
 			if (!values.motherboard) {
-				errors.motherboard = 'Нет матплаты? Напишите "нет"'
+				errors.motherboard = 'Anakart yok mu? "Yok" yazınız.'
 			}
 			if (!values.processor) {
-				errors.processor = 'Нет процессора? Напишите "нет"'
+				errors.processor = 'İşlemci yok mu? "Yok" yazınız.'
 			}
 			if (!values.memory) {
-				errors.memory = 'Нет оперативки? Напишите "нет"'
+				errors.memory = 'RAM yok mu? "Yok" yazınız.'
 			}
 			if (!values.storage) {
-				errors.storage = 'Нет HDD или SDD? Напишите "нет"'
+				errors.storage = 'HDD veya SSD yok mu? "Yok" yazınız.'
 			}
 			if (!values.price) {
-				errors.price = 'Обязательное поле'
+				errors.price = 'Zorunlu alan'
 			}
 			if (!values.power) {
-				errors.power = 'Нет блок питания? Напишите "нет"'
+				errors.power = 'Güç kaynağı yok mu? "Yok" yazınız.'
 			}
 			if (!values.case) {
-				errors.case = 'Нет корпуса? Напишите "нет"'
+				errors.case = 'Kasa yok mu? "Yok" yazınız.'
 			}
 
 			return errors

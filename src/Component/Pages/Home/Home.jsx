@@ -71,10 +71,7 @@ function Home() {
 			</div>
 
 			<Popup isOpen={isOpen} onClose={handleClose}>
-				<a
-					className='link'
-					href='https://wa.me/905444558407?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5.%20%D0%AF%20%D0%BF%D0%BE%20%D0%BF%D0%BE%D0%B2%D0%BE%D0%B4%D1%83%20%D1%81%D0%BA%D1%83%D0%BF%D0%BA%D0%B8'
-				>
+				<a className='link' href='https://wa.me/905444558407'>
 					<h3>WhatsApp ile Sat</h3>
 					<p>Sadece biz değerlendireceğiz ve en iyi fiyatı teklif edeceğiz</p>
 				</a>

@@ -2,6 +2,7 @@ import styles from '../Form.module.sass'
 
 import React from 'react'
 import { Link } from 'react-router-dom'
+import WhatsAppButton from '../WhatsApp'
 import LaptopsForm from './LaptopForm'
 
 function Laptops() {
@@ -12,6 +13,8 @@ function Laptops() {
 				Dizüstü bilgisayarınızı satmak için lütfen marka ve modeli, varsa ek
 				cihazları belirtin.
 			</p>
+			<p>Ya da bize WhatsApp numaramıza yazın</p>
+			<WhatsAppButton phoneNumber='905444558407' message='Merhaba' />
 			<LaptopsForm />
 			<div className={styles.important}>
 				<p>

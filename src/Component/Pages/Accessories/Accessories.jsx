@@ -3,6 +3,7 @@ import styles from '../Form.module.sass'
 import React from 'react'
 
 import { Link } from 'react-router-dom'
+import WhatsAppButton from '../WhatsApp'
 import AccessoriesForm from './AccessoriesForm'
 
 function Accessories() {
@@ -21,7 +22,8 @@ function Accessories() {
 				Yalnızca bir işlemciniz veya ekran kartınız varsa, diğer alanlara "YOK"
 				yazın.
 			</p>
-
+			<p>Ya da bize WhatsApp numaramıza yazın</p>
+			<WhatsAppButton phoneNumber='905444558407' message='Merhaba' />
 			<AccessoriesForm />
 			<div className={styles.important}>
 				<p>
