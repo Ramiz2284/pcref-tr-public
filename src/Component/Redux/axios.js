@@ -2,7 +2,7 @@ import axios from 'axios'
 
 const instance = axios.create({
 	// baseURL: process.env.REACT_APP_DO_URL   // url для heroku
-	baseURL: 'https://pcref.sgit ite:9000',
+	baseURL: 'https://pcref.site:9000',
 	// baseURL: 'http://localhost:4444'
 })
 
