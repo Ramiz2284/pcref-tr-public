@@ -3,6 +3,7 @@ import { useDispatch, useSelector } from 'react-redux'
 import { Link } from 'react-router-dom'
 import { logout, selectIsAuth } from '../../Component/Redux/LoginSlice'
 
+import logo from '../../img/logo.png'
 import GoogleTranslate from '../Pages/GoogleTranslate'
 import styles from './Header.module.sass'
 
@@ -42,7 +43,7 @@ function Header() {
 			<div className={styles.header}>
 				<div className={styles.logo}>
 					<Link className={styles.link} to='/'>
-						<li>Bilgisayar alımı</li>
+						<img src={logo} alt='logo' />
 					</Link>
 				</div>
 

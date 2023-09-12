@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import accessories from '../../../img/accessories.jpg'
+import iphone from '../../../img/iphone.jpeg'
 import laptop from '../../../img/laptop.jpg'
 import monitors from '../../../img/monitors.jpg'
 import pc from '../../../img/pc.jpg'
@@ -16,9 +17,15 @@ import { Link } from 'react-router-dom'
 
 const homeCard = [
 	{
+		img: iphone,
+		title: 'Cep telefon',
+		categiry: 'iphone',
+	},
+
+	{
 		img: pc,
 		title: 'Bilgisayar',
-		categiry: 'computer',
+		categiry: 'android',
 	},
 	{
 		img: accessories,
@@ -75,11 +82,18 @@ function Home() {
 					<h3>WhatsApp ile Sat</h3>
 					<p>Sadece biz değerlendireceğiz ve en iyi fiyatı teklif edeceğiz</p>
 				</a>
-				<Link className='link' to={`/${selectedCategory}`}>
-					<h3>Açık artırmaya gönder</h3>
-					<p>Ürününüzü gören tüm alıcılar değerlendirecek</p>
-				</Link>
+				{selectedCategory === 'iphone' ? (
+					<Link className='link' to={`/${selectedCategory}`}>
+						<h3>Bilmeniz Gerekenler</h3>
+					</Link>
+				) : (
+					<Link className='link' to={`/${selectedCategory}`}>
+						<h3>Açık artırmaya gönder</h3>
+						<p>Ürününüzü gören tüm alıcılar değerlendirecek</p>
+					</Link>
+				)}
 			</Popup>
+
 			<div className={styles.cards}>
 				{homeCard.map(el => (
 					<div
