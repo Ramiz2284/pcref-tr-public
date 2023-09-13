@@ -25,7 +25,7 @@ const homeCard = [
 	{
 		img: pc,
 		title: 'Bilgisayar',
-		categiry: 'android',
+		categiry: 'computer',
 	},
 	{
 		img: accessories,
