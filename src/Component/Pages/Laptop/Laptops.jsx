@@ -1,6 +1,7 @@
 import styles from '../Form.module.sass'
 
 import React from 'react'
+import { Helmet } from 'react-helmet'
 import { Link } from 'react-router-dom'
 import WhatsAppButton from '../WhatsApp'
 import LaptopsForm from './LaptopForm'
@@ -8,6 +9,17 @@ import LaptopsForm from './LaptopForm'
 function Laptops() {
 	return (
 		<div className={`${styles.computer} ${'bg'}`}>
+			<Helmet>
+				<title>Dizüstü Bilgisayar Sat - pcref.site</title>
+				<meta
+					name='description'
+					content='Dizüstü bilgisayarınızı satmak için lütfen marka ve modeli, varsa ek cihazları belirtin. Ya da bize WhatsApp numaramıza yazın.'
+				/>
+				<meta
+					name='keywords'
+					content='Dizüstü Bilgisayar Sat, ikinci El Laptop Alan Yerler, 2 El Sıfır Laptop Macbook Alım Merkezi Degerinde Satmak, laptop alan yerler, laptobumu satmak istiyorum'
+				/>
+			</Helmet>
 			<h1>Dizüstü Bilgisayar Sat</h1>
 			<p>
 				Dizüstü bilgisayarınızı satmak için lütfen marka ve modeli, varsa ek

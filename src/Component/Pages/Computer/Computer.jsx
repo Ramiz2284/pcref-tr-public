@@ -1,6 +1,7 @@
 import styles from '../Form.module.sass'
 
 import React from 'react'
+import { Helmet } from 'react-helmet'
 import { Link } from 'react-router-dom'
 import WhatsAppButton from '../WhatsApp'
 import ComputerForm from './ComputerForm'
@@ -8,6 +9,17 @@ import ComputerForm from './ComputerForm'
 function Computer() {
 	return (
 		<div className={`${styles.computer} ${'bg'}`}>
+			<Helmet>
+				<title>Bilgisayar Sat - PCRef</title>
+				<meta
+					name='description'
+					content='Bilgisayarınızı hızlı ve güvenli bir şekilde satın. Model, marka, işlemci, RAM ve diğer detayları belirtin.'
+				/>
+				<meta
+					name='keywords'
+					content='Bilgisayar Sat, ikinci El Bilgisayar, Güvenli Alışveriş, Bilgisayar Fiyatlandırma, ANINDA ALIM HIZMETI'
+				/>
+			</Helmet>
 			<h1>Bilgisayar Sat</h1>
 			<p>
 				Bilgisayarınızı satmak için lütfen model ve markayı, işlemciyi,

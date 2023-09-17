@@ -13,6 +13,7 @@ import {
 	faMoneyBillAlt,
 } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { Helmet } from 'react-helmet'
 import { Link } from 'react-router-dom'
 
 const homeCard = [
@@ -60,6 +61,18 @@ function Home() {
 
 	return (
 		<div className={`${styles.home} ${'bg'}`}>
+			<Helmet>
+				<title>Elektronik ve Teknoloji Ürünlerinizi Satın - pcref.site</title>
+				<meta
+					name='description'
+					content='Laptop ve Bilgisayar sat, PS3-PS4-PS5 Oyun Konsolu Sat, ikinci El Laptop Alan Yerler, ikinci El Bilgisayar Alan Yerler, ikinci El Sıfır Cep Telefonu alım Merkezi Degerinde Alıyoruz, ikinci El Macbook Alan Yerler, Macbook Air Alan Yerler, Imac Apple Bilgisayar Alanlar, ikinci El Masaüstü Bilgisayar, 2 El Sıfır Laptop Macbook Alım Merkezi Degerinde Satmak'
+				/>
+				<meta
+					name='keywords'
+					content='Laptop ve Bilgisayar sat, PS3-PS4-PS5 Oyun Konsolu Sat, ikinci El Laptop Alan Yerler, ikinci El Bilgisayar Alan Yerler, ikinci El Sıfır Cep Telefonu alım Merkezi Degerinde Alıyoruz, ikinci El Macbook Alan Yerler, Macbook Air Alan Yerler, Imac Apple Bilgisayar Alanlar, ikinci El Masaüstü Bilgisayar, 2 El Sıfır Laptop Macbook Alım Merkezi Degerinde Satmak, laptop alan yerler, Ps4 alan yerler, laptobumu satmak istiyorum, notebook alan yerler, bilgisayar alan yerler, ps3 alan yerler, Ayrıcalıklı Hizmet, NASIL SATIN ALIYORUZ?, Güvenli Alışveriş, NASIL FiYATLANDIRIYORUZ?, ANINDA ALIM HIZMETI'
+				/>
+			</Helmet>
+
 			<div className={styles.stepWrapp}>
 				<div>
 					<FontAwesomeIcon className={styles.stepIcon} icon={faLaptop} />
