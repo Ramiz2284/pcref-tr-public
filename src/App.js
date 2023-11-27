@@ -23,6 +23,7 @@ import { ResetPass } from './Component/Pages/ResetPass'
 import WhatsAppForm from './Component/Pages/WhatsAppForm/WhatsAppForm'
 import { fetchAuthMe /* selectIsAuth */ } from './Component/Redux/LoginSlice'
 import Politica from './Politica'
+import ScrollToTop from './scrol'
 
 function App() {
 	// const isAuth = useSelector(selectIsAuth);
@@ -36,7 +37,7 @@ function App() {
 	return (
 		<div className='App'>
 			<Header />
-
+			<ScrollToTop />
 			<Routes>
 				<Route path='/' element={<Home />} />
 				<Route path='/computer' element={<Computer />} />
