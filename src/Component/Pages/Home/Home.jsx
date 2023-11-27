@@ -62,7 +62,7 @@ function Home() {
 	return (
 		<div className={`${styles.home} ${'bg'}`}>
 			<Helmet>
-				<title>Elektronik ve Teknoloji Ürünlerinizi Satın - pcref.site</title>
+				<title>Bilgisayarlar, laptop ve cep telefon alımı - pcref.site</title>
 				<meta
 					name='description'
 					content='Laptop ve Bilgisayar sat, PS3-PS4-PS5 Oyun Konsolu Sat, ikinci El Laptop Alan Yerler, ikinci El Bilgisayar Alan Yerler, ikinci El Sıfır Cep Telefonu alım Merkezi Degerinde Alıyoruz, ikinci El Macbook Alan Yerler, Macbook Air Alan Yerler, Imac Apple Bilgisayar Alanlar, ikinci El Masaüstü Bilgisayar, 2 El Sıfır Laptop Macbook Alım Merkezi Degerinde Satmak'
@@ -91,10 +91,10 @@ function Home() {
 			</div>
 
 			<Popup isOpen={isOpen} onClose={handleClose}>
-				<a className='link' href='https://wa.me/905444558407'>
+				<Link className='link' to='/whatsapp-form'>
 					<h3>WhatsApp ile Sat</h3>
 					<p>Sadece biz değerlendireceğiz ve en iyi fiyatı teklif edeceğiz</p>
-				</a>
+				</Link>
 				{selectedCategory === 'iphone' ? (
 					<Link className='link' to={`/${selectedCategory}`}>
 						<h3>Bilmeniz Gerekenler</h3>

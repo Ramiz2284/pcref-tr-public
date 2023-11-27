@@ -20,6 +20,7 @@ import LastRequestsLaptop from './Component/Pages/Laptop/LastRequests'
 import LastRequestsMonitor from './Component/Pages/Monitor/LastRequests'
 import Monitor from './Component/Pages/Monitor/Monitor'
 import { ResetPass } from './Component/Pages/ResetPass'
+import WhatsAppForm from './Component/Pages/WhatsAppForm/WhatsAppForm'
 import { fetchAuthMe /* selectIsAuth */ } from './Component/Redux/LoginSlice'
 import Politica from './Politica'
 
@@ -53,6 +54,7 @@ function App() {
 				<Route path='/resetpass' element={<ResetPass />} />
 				<Route path='/grade' element={<Grade />} />
 				<Route path='/politica' element={<Politica />} />
+				<Route path='/whatsapp-form' element={<WhatsAppForm />} />
 			</Routes>
 
 			<Footer />
